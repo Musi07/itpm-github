@@ -1,11 +1,11 @@
-/* Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Background */
+
 body {
     font-family: 'Segoe UI', sans-serif;
     height: 100vh;
@@ -16,7 +16,7 @@ body {
     background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
 }
 
-/* Container */
+
 .container {
     background: rgba(0, 0, 0, 0.7);
     padding: 30px;
@@ -30,7 +30,7 @@ body {
     animation: fadeIn 1s ease-in-out;
 }
 
-/* Title */
+
 h2 {
     text-align: center;
     color: #00ffff;
@@ -38,7 +38,7 @@ h2 {
     letter-spacing: 1px;
 }
 
-/* Inputs */
+
 input {
     width: 100%;
     padding: 12px;
@@ -53,12 +53,12 @@ input {
     transition: 0.3s;
 }
 
-/* Input glow */
+
 input:focus {
     box-shadow: 0 0 10px #00ffff;
 }
 
-/* Button */
+
 button {
     width: 100%;
     padding: 12px;
@@ -72,20 +72,20 @@ button {
     transition: 0.3s;
 }
 
-/* Button hover */
+
 button:hover {
     transform: scale(1.05);
     box-shadow: 0 0 15px #00ffff;
 }
 
-/* Text */
+
 p {
     text-align: center;
     margin-top: 15px;
     color: #ccc;
 }
 
-/* Link */
+
 a {
     color: #00ffff;
     text-decoration: none;
@@ -95,7 +95,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Animation */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
