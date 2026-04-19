@@ -7,83 +7,102 @@
 
 /* Background */
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    font-family: 'Segoe UI', sans-serif;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
 }
 
 /* Container */
 .container {
-    background: white;
+    background: rgba(0, 0, 0, 0.7);
     padding: 30px;
     width: 350px;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    border-radius: 15px;
 
-    /* Animation */
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
+
+    backdrop-filter: blur(10px);
+
     animation: fadeIn 1s ease-in-out;
 }
 
-/* Animation keyframe */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Heading */
+/* Title */
 h2 {
     text-align: center;
+    color: #00ffff;
     margin-bottom: 20px;
+    letter-spacing: 1px;
 }
 
-/* Input */
+/* Inputs */
 input {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     margin: 10px 0;
-    border-radius: 6px;
-    border: 1px solid #ccc;
+    border: none;
+    border-radius: 8px;
+
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Input glow */
+input:focus {
+    box-shadow: 0 0 10px #00ffff;
 }
 
 /* Button */
 button {
     width: 100%;
-    padding: 10px;
-    background: #4facfe;
-    color: white;
+    padding: 12px;
+    background: linear-gradient(45deg, #00ffff, #0072ff);
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
     cursor: pointer;
+
     transition: 0.3s;
 }
 
-/* Hover effect */
+/* Button hover */
 button:hover {
-    background: #00c6ff;
     transform: scale(1.05);
+    box-shadow: 0 0 15px #00ffff;
 }
 
 /* Text */
 p {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 15px;
+    color: #ccc;
 }
 
 /* Link */
 a {
-    color: #4facfe;
+    color: #00ffff;
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
