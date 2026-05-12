@@ -1,0 +1,15 @@
+{
+  "name": "sajeda-student-portal",
+  "version": "1.0.0",
+  "description": "Student Profile API Project for ITPM Assignment",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "author": "Sajeda Sultana",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
