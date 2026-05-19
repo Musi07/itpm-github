@@ -1,57 +1,46 @@
-# Sajeda Student API
+# 🎓 Student Profile & Todo Application API
 
-A simple REST API built with Node.js and Express for managing student profile information.
+## 📌 Overview
 
-## Project Information
-
-- **Project Name:** Sajeda Student API
-- **Author:** Sajeda Sultana
-- **Technology:** Node.js, Express.js
-- **University:** Feni University
+This project is developed as part of the IT Project Management course.  
+It demonstrates how to build a complete REST API using Node.js and Express.js.
 
 ---
 
-## Features
+## 🚀 Features
 
-- Home route
-- Student profile API
-- Server status API
-- JSON response handling
+- Custom API route for student profile
+- Complete CRUD API endpoints for a Todo application
+- JSON formatted responses
+- Fully tested using Postman
 
 ---
 
-## Installation
+## 🔗 API Endpoints
 
-### Step 1: Clone the project
+### 1. Student Profile Routes
 
-```bash
-git clone <your-repository-link>
+- **GET** `/api/v1/student` - Get student profile details
+- **GET** `/api/v1/status` - Check server status
 
-cd sajeda-student-portal
-npm install
-npm start
-http://localhost:3000
-GET /
-Welcome to Sajeda Student Information Server
+### 2. Todo Application Routes (New Assignment)
+
+- **GET** `/api/v1/todos` - Get all todos
+- **POST** `/api/v1/todos` - Create a new todo
+- **GET** `/api/v1/todos/:id` - Get a selective todo by ID
+- **PUT** `/api/v1/todos/:id` - Update a todo's title or completion status
+- **DELETE** `/api/v1/todos/:id` - Delete a todo by ID
+
+---
+
+## 📊 Sample Student Profile Response
+
+```json
 {
   "success": true,
-  "generatedAt": "2026-05-13T10:00:00.000Z",
   "profile": {
     "id": "232031053",
-    "name": "Sajeda Sultana",
-    "department": "Computer Science and Engineering",
-    "university": "Feni University",
-    "currentSemester": "3rd Semester",
-    "programmingSkills": [
-      "JavaScript",
-      "C Programming",
-      "HTML"
-    ]
+    "name": "Sajeda Sultana Syma"
   }
 }
-
-GET /api/v1/server-status
-{
-  "message": "Server is active",
-  "runningPort": 3000
-}
+```
